@@ -1,0 +1,48 @@
+data_dir: data
+device: auto
+threads: 4
+seeds:
+- 123
+folds: 5
+ranking_ks:
+- 10
+- 50
+output_dir: results/cif4sl
+split:
+  cv: CV1
+  negative_strategy: Rand
+  negative_ratio: 1
+  dataset_variant: full
+  validation_fraction: 0.1
+  validation_mode: pair_holdout
+  split_source: generated
+  catalog_scope: all_genes
+  catalog_filter: train_valid
+model:
+  embedding_dim: 256
+  hidden_dim: 64
+  context_dim: 16
+  dropout: 0.25
+response_file: data/perturbation_responses/processed/responses.csv.gz
+training:
+  warmup_epochs: 200
+  joint_epochs: 100
+  warmup_lr: 0.01
+  joint_lr: 0.0003
+  lambda_margin: 0.5
+  lambda_bliss: 10.0
+  m_pos: 0.3
+  m_neg: 0.1
+  weight_decay: 1.0e-05
+  grad_clip: 5.0
+  warmup_eval_every: 10
+  joint_eval_every: 1
+  bliss_pairs: 4096
+compute:
+  batch_size: 2048
+  pair_batch_size: 4096
+  graph_row_block_size: 8
+  graph_pair_batch_size: 16384
+  query_batch_size: 64
+  sparsemax_temperature: 1.0
+  context_column: context

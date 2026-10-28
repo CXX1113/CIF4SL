@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "measured_response_records": 21899,
+    "measured_response_pairs": 7970,
+    "measured_response_genes": 1190,
+    "studies": 12,
+    "study_contexts": 76,
+    "complete_measured_pairs": 7750,
+    "complete_measured_records": 15959
+  },
+  "files": [
+    {
+      "path": "responses.csv.gz",
+      "bytes": 165814,
+      "sha256": "422f2f5a0a56a5b0f9c3dbc4d26e14e23bf913b72067bf7d3f7e4236993d15a4"
+    },
+    {
+      "path": "response_records.csv",
+      "bytes": 10564916,
+      "sha256": "add3199b955d5711e8fd414fd6c4b86cebe4f6cb1dcff4428dfa31d6e8a04439"
+    }
+  ]
+}

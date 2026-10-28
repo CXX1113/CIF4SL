@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "genes": 9845,
+    "known_positive_pairs": 35913,
+    "node_feature_dimension": 384
+  },
+  "files": [
+    {
+      "path": "genes.csv",
+      "bytes": 786339,
+      "sha256": "f4406f5068f71d3d0e236a14bdc56c0c8ae2713dbf52a02e6d36f4d79d87524a"
+    },
+    {
+      "path": "sl_pairs.csv",
+      "bytes": 421790,
+      "sha256": "d4a1db9a2ec661ca3c6d0eca2488b66fd8fcdd319a60e49cb7d94ec2a90d8426"
+    },
+    {
+      "path": "features.npz",
+      "bytes": 13170960,
+      "sha256": "90ccc3bc612fc50e34244ef8cdb7fa20dd8fe314c2b6023251b67ef90ebbccd1"
+    }
+  ]
+}
